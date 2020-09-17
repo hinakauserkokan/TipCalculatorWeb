@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+        <!--this is the name of the tab-->
+        <title>Hello World</title>
+
+        <!--this is used to link the javascript file to html-->
+        <script src="app.js" type="text/javascript"></script> 
+
+        <!--this is to link css file with the html-->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        
+        <!--form is used to get input data-->
+        <form>
+
+            <!--this is used to draw a box-->
+            <fieldset>
+
+                <!-- this is used to give title to the box which is written on the line itself-->
+                <legend>Tip Calculator</legend>
+                <br>
+
+                <!--this is the title for the input textbox-->
+                <label for="billamount">How much is your bill amount?</label>
+                <br>
+
+
+                <a>₹</a>
+                
+                <!--this is used to get input from the users, placeholder is used as hint text, type - text denotes.. it is a textfield-->
+                <input type="text" id="bamount" placeholder="Bill Amount" name="bamount"/>
+                <br>
+                <br>
+                <label for="service">How was your service:</label>
+                <br>
+                
+                <!--select is used for drop down list-->
+                <select id="service">
+
+                    <!--options are the list of values in the drop down list-->
+                    <option value="default"disabled selected hidden>Choose an option</option>
+                    <option value="5">Poor</option>
+                    <option value="10">Average</option>
+                    <option value="15">Good</option>
+                </select>
+                <br>
+                <br>
+                <label for="share">How many people are sharing the bill?</label>
+                <br>
+                <input type="text" id="peopleCount" name="peopleCount" placeholder="Number of people"/>
+                <a>people</a>
+                <br>
+                <br>
+
+                <!--type button... makes this a button, we can also use button tag. onclick attribute gets the function from javascript file as the value-->
+                <input type="button" value="Calculate" onclick="myFunction()"/>
+                <br>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
