@@ -16,6 +16,8 @@ function myFunction(){
         alert("Enter the details")
     else
         //alert is the top dialog box 
-        alert("Each pay "+bt+" rupees");
+        document.getElementById("res").innerHTML= "Each pay "+bt+" rupees"
+        //alert("Each pay "+bt+" rupees");
+        
 
 }
